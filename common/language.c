@@ -50,6 +50,7 @@ const char* const g_strings[StrId_Max][17] =
     {
         STR_EN("● Applet Mode ●"),
         STR_ES("● Modo Applet ●"),
+        STR_DE("● Minianwendung Modus ●"),
         STR_FR("● Mode Applet ●"),
         STR_ZH_HANS("● 小程序模式 ●"),
     },
@@ -106,7 +107,7 @@ const char* const g_strings[StrId_Max][17] =
     {
         STR_EN("I/O Error"),
         STR_ES("Error de E/S"),
-        STR_DE("I/O-Fehler"),
+        STR_DE("E/A-Fehler"),
         STR_FR("Erreur d'E/S"),
         STR_IT("Errore I/O"),
         STR_JP("入出力エラー"),
@@ -137,6 +138,7 @@ const char* const g_strings[StrId_Max][17] =
     [StrId_NroNotFound] =
     {
         STR_EN("Could not find executable: %s"),
+        STR_DE("Ausführbare Anwendung nicht gefunden: %s"),
         STR_FR("Impossible trouver l'exécutable : %s"),
         STR_ZH_HANS("找不到可执行文件"),
     },
@@ -360,6 +362,7 @@ const char* const g_strings[StrId_Max][17] =
     {
         STR_EN("Star"),
         STR_ES("Agregar a favoritos"),
+        STR_DE("Zu Favoriten hinzufügen"),
         STR_IT("Aggiungi ai preferiti"),
         STR_FR("Ajouter aux favoris"),
         STR_ZH_HANS("收藏"),
@@ -369,6 +372,7 @@ const char* const g_strings[StrId_Max][17] =
     {
         STR_EN("Unstar"),
         STR_ES("Borrar de favoritos"),
+        STR_DE("Aus Favoriten entfernen"),
         STR_IT("Rimuovi dai preferiti"),
         STR_FR("Retirer des favoris"),
         STR_ZH_HANS("取消收藏"),
