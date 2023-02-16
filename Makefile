@@ -1,7 +1,7 @@
 export APP_VERSION	:=	3.5.1
 
 ifeq ($(RELEASE),)
-	export APP_VERSION	:=	$(APP_VERSION)-$(shell git describe --dirty --always)
+	export APP_VERSION	:=	$(APP_VERSION)-SB
 endif
 
 .PHONY: clean all nx pc dist-bin
