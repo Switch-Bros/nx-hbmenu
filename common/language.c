@@ -136,13 +136,13 @@ const char* const g_strings[StrId_Max][17] =
 
     [StrId_Actions_Star] =
     {
-        STR_EN("Star"),
+        STR_EN("Favorit"),
         STR_DE("Favorit"),
     },
 
     [StrId_Actions_Unstar] =
     {
-        STR_EN("Unstar"),
+        STR_EN("DeFavorit"),
         STR_DE("DeFavorit"),
     },
 
