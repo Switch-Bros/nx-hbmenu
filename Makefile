@@ -1,12 +1,12 @@
 export APP_VERSION	:=	3.6.0
 
 ifeq ($(RELEASE),)
-	export APP_VERSION	:=	$(APP_VERSION)-$(shell git describe --dirty --always)
+	export APP_VERSION	:=	$(APP_VERSION)-SB
 endif
 
-.PHONY: clean all nx pc dist-bin
+.PHONY: clean all nx dist-bin
 
-all: nx pc
+all: nx
 
 romfs:
 	@mkdir -p romfs
@@ -21,10 +21,6 @@ dist-bin:	romfs/assets.zip
 nx:	romfs/assets.zip
 	$(MAKE) -f Makefile.nx
 
-pc:	romfs/assets.zip
-	$(MAKE) -f Makefile.pc
-
 clean:
 	@rm -Rf romfs
-	$(MAKE) -f Makefile.pc clean
 	$(MAKE) -f Makefile.nx clean

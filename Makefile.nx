@@ -42,7 +42,7 @@ BUILD		:=	build
 SOURCES		:=	common/ nx_main/ nx_main/loaders/
 DATA		:=	data
 INCLUDES	:=	include
-ROMFS	:=	romfs
+ROMFS		:=	romfs
 
 DIST_PATH	:=	$(TARGET)_v$(APP_VERSION)
 
@@ -167,6 +167,7 @@ all: $(BUILD)
 $(BUILD):
 	@[ -d $@ ] || mkdir -p $@
 	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile.nx
+	@cp $(OUTPUT).nro $(CURDIR)/hbmenu.nro
 
 #---------------------------------------------------------------------------------
 clean:
@@ -180,7 +181,7 @@ endif
 #---------------------------------------------------------------------------------
 dist-bin: all
 	@mkdir -p $(DIST_PATH)
-	@cp $(OUTPUT).nro $(DIST_PATH)/hbmenu.nro
+	@cp $(OUTPUT).nro $(CURDIR)/hbmenu.nro
 	@zip -rj $(DIST_PATH).zip $(DIST_PATH)
 
 #---------------------------------------------------------------------------------
