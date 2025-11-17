@@ -78,7 +78,7 @@ const char* const g_strings[StrId_Max][17] =
             "namens /switch im Hauptverzeichnis der SD-Karte\n"
             "existiert und Anwendungen enthält!"
         ),
-     },
+    },
 
     [StrId_LastLoadResult] =
     {
@@ -178,7 +178,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x80 Neu starten\n"
             "  \xEE\x80\x81 Abbrechen"
         ),
-     },*/
+    },*/
 
     /*[StrId_ReturnToHome] =
     {
@@ -194,7 +194,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x81 Abbrechen\n"
             "  \xEE\x80\x82 Konsole neustarten"
         ),
-     },*/
+    },*/
 
     /*[StrId_TitleSelector] =
     {
@@ -226,7 +226,7 @@ const char* const g_strings[StrId_Max][17] =
             "  \xEE\x80\x80 Auswählen\n"
             "  \xEE\x80\x81 Abbrechen"
         ),
-     },
+    },
 
     [StrId_NoTargetTitleSupport] =
     {
@@ -252,7 +252,7 @@ const char* const g_strings[StrId_Max][17] =
             "Die ausgewählte Anwendung benötigt einen\n"
             "Titel der nicht installiert ist."
         ),
-     },*/
+    },*/
 
     [StrId_NetLoader] =
     {
@@ -288,7 +288,7 @@ const char* const g_strings[StrId_Max][17] =
             "Warte auf Verbindung von nxlink…\n"
             "IP Addresse: %lu.%lu.%lu.%lu, Port: %d"
         ),
-     },
+    },
 
     [StrId_NetLoaderTransferring] =
     {
@@ -300,5 +300,17 @@ const char* const g_strings[StrId_Max][17] =
             "Übertragen…\n"
             "%zu von %zu KiB geschrieben"
         ),
-     },
+    },
+
+    [StrId_RecompileWarning] =
+    {
+        STR_EN(
+            "This application does not support the current ABI.\n"
+            "Expect compatibility issues.\n"
+        ),
+		STR_DE(
+            "This application does not support the current ABI.\n"
+            "Expect compatibility issues.\n"
+        ),
+    },
 };

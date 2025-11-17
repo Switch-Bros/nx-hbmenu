@@ -405,6 +405,14 @@ void themeStartup(ThemePreset preset) {
                 .posStart = {1280 - 790, 135+10 + 28 + 30 + 18 + 6 + 18},
                 .font = interuiregular14,
             },
+
+            [ThemeLayoutId_MenuActiveEntryRecompileWarning] = {
+                .visible = true,
+                .posType = false,
+                .posStart = {1280 - 790, 100 + 10 + 256 - 18},
+                .font = interuiregular14,
+            },
+
         },
     };
 
@@ -605,6 +613,7 @@ void themeStartup(ThemePreset preset) {
             layoutObjectFromSetting(config_setting_lookup(layout, "menuActiveEntryName"), &themeCurrent.layoutObjects[ThemeLayoutId_MenuActiveEntryName], false);
             layoutObjectFromSetting(config_setting_lookup(layout, "menuActiveEntryAuthor"), &themeCurrent.layoutObjects[ThemeLayoutId_MenuActiveEntryAuthor], false);
             layoutObjectFromSetting(config_setting_lookup(layout, "menuActiveEntryVersion"), &themeCurrent.layoutObjects[ThemeLayoutId_MenuActiveEntryVersion], false);
+            layoutObjectFromSetting(config_setting_lookup(layout, "menuActiveEntryRecompileWarning"), &themeCurrent.layoutObjects[ThemeLayoutId_MenuActiveEntryRecompileWarning], false);
         }
 
         if (is_archive) assets = config_lookup(&cfg, "assets");
